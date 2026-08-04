@@ -2,9 +2,9 @@ from fastapi import APIRouter, Depends, status
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from database import get_db
-from models.field import Field
-from schemas.field import FieldCreate, FieldResponse
+from app.database import get_db
+from app.models.field import Field
+from app.schemas.field import FieldCreate, FieldResponse
 
 
 router = APIRouter(
